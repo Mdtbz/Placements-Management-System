@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        
+        body {
+            background: url('https://www.athletadesk.com/wp-content/uploads/2016/08/join-background.jpg')no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+        
+        .register-page {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+        }
+        
+        .register-page h1 {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+        
+        .register-page p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        
+        .register-page input {
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        .register-page button {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 10px 15px;
+            width: 50%;
+            border: 0;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        
+        .register-page button:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-page">
+        <h1>Registration Form</h1>
+        <form class="register-form">
+            <p>Username</p>
+            <input type="text" placeholder="Username" name="">
+
+            <p>Email</p>
+            <input type="email" placeholder="email" name="">
+            <p>Password</p>
+            <input type="password" placeholder="password" name="">
+            <button>SUBMIT</button>
+            <p class="message">Already registered? <a href="@{'/adminlogin'}">Login</a></p>
+        </form>
+    </div>
+    </div>
+
+</body>
+
+</html>
